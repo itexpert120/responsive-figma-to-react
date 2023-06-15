@@ -1,0 +1,73 @@
+#testimonials .people-wrapper {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 128px;
+}
+
+#testimonials .people-wrapper .testimonial {
+  width: 194px;
+}
+
+#testimonials .people-wrapper .testimonial img {
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+#testimonials .people-wrapper .testimonial .person-name {
+  padding-top: 16px;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+#testimonials .people-wrapper .testimonial .person-says {
+  padding-top: 7px;
+  font-family: "Alegreya";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  #testimonials .people-wrapper {
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 50px;
+  }
+
+  #testimonials .people-wrapper .testimonial {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
+
+  #testimonials .people-wrapper .testimonial .info-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 720px) {
+  #testimonials .people-wrapper .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+  }
+}

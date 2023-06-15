@@ -1,0 +1,60 @@
+#info .content-container {
+  justify-content: space-around;
+}
+
+#info .info-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: all ease 300ms;
+}
+
+#info .info-content:hover {
+  transform: scale(1.04);
+}
+
+#info .info-content .amount {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+#info .info-content .type {
+  font-family: "Alegreya";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+}
+
+#info .wrapper {
+  position: relative;
+}
+
+#info .wrapper .bg-element {
+  position: absolute;
+  top: -24px;
+  left: 0;
+}
+
+@media (max-width: 720px) {
+  #info .content-container {
+    flex-direction: column;
+    gap: 80px;
+  }
+
+  #info .info-content .amount {
+    font-size: 32px;
+    line-height: 39px;
+  }
+
+  #info .info-content .type {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  #info .wrapper .bg-element {
+    left: 24px;
+  }
+}
