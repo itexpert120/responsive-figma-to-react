@@ -1,4 +1,5 @@
 import "./Header.css";
+import { HeroImage } from "../../assets";
 
 import Navbar from "../Navbar/Navbar";
 
@@ -15,6 +16,7 @@ function Header() {
           </a>
         </div>
       </div>
+      <img className="hero-image" src={HeroImage} alt="" />
     </header>
   );
 }
